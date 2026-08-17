@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#090f1d" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Das Wunderpaket – Exklusiver Zugang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@600;800;900&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="unlock.css" />
+</head>
+<body>
+  <main class="stage">
+    <button class="gift-box" id="open" type="button" aria-label="Wunderpaket öffnen">
+      <span class="ribbon"></span>
+      <span class="box-emoji">🎁</span>
+    </button>
+    <p class="hint">Das Wunderpaket für Selly · Tippe, um das Siegel zu brechen ✨</p>
+    <form id="unlock" class="unlock" hidden>
+      <p class="eyebrow">Exklusives Erlebnismagazin</p>
+      <h1>Das<br><em>Wunderpaket</em></h1>
+      <p>Gib den geheimen Zugangscode ein, um alle 10 Pavillons zu betreten.</p>
+      <label for="passphrase">Code</label>
+      <input id="passphrase" type="password" autocomplete="off" required placeholder="Zugangscode eingeben..." />
+      <p class="error" id="error" aria-live="polite"></p>
+      <button>Wunderpaket öffnen →</button>
+    </form>
+  </main>
+  <script src="unlock.js"></script>
+</body>
+</html>
